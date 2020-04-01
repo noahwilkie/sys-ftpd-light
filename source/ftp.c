@@ -37,7 +37,6 @@
 #define BIT(x) (1 << (x))
 #endif
 #include "console.h"
-#include "led.h"
 #include "util.h"
 
 #define POLL_UNKNOWN (~(POLLIN | POLLPRI | POLLOUT))
@@ -1842,7 +1841,6 @@ ftp_session_poll(ftp_session_t *session)
 
   /* disconnected from peer; destroy it and return next session */
   debug_print("disconnected from peer\n");
-  flash_led_disconnect();
   return ftp_session_destroy(session);
 }
 
@@ -2145,7 +2143,6 @@ ftp_loop(void)
       {
         return LOOP_RESTART;
       }
-      flash_led_connect();
     }
     else
     {
