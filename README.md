@@ -1,6 +1,6 @@
 # sys-ftpd-nolight
 
-turned the led off for cathery's [sys-ftpd-light](https://github.com/cathery/sys-ftpd-light)
+Turned the led off for cathery's [sys-ftpd-light](https://github.com/cathery/sys-ftpd-light)
 
 Put the contents of the sd_card folder in the root of your sd-card or else the Module won't work!
 
